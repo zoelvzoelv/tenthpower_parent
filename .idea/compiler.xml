@@ -10,12 +10,12 @@
         <module name="tenthpower_lable" />
         <module name="tenthpower_common" />
         <module name="tenthpower_article" />
-        <module name="tenthpower_user" />
         <module name="tenthpower_fegin" />
         <module name="tenthpower_recruit" />
         <module name="tenthpower_qa" />
         <module name="tenthpower_search" />
         <module name="tenthpower_sms" />
+        <module name="tenthpower_user" />
         <module name="tenthpower_spit" />
         <module name="tenthpower_gathering" />
       </profile>

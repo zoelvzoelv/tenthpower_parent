@@ -4,10 +4,9 @@ import java.util.List;
 
 /**
  *
- * @param <V> Vo
- * @param <D> Dao
+ * @param <V> Vo:
  */
-public interface BaseService<V,D> {
+public interface BaseService<V,D,I> {
 
     public List<V> findAll() throws Exception;
 
