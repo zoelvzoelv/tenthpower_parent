@@ -1,0 +1,14 @@
+server:
+    port: 9002
+spring:
+    application:
+        name: tenthpower-recruit #指定服务名
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://134.175.91.16:3306/tensquare_recruit?characterEncoding=utf-8
+        username: root
+        password: h123456
+    jpa:
+        database: MySQL
+        show‐sql: true
+        generate‐ddl: true

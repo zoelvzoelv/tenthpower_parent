@@ -6,15 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tenthpower_base" />
+        <module name="tenthpower_friend" />
+        <module name="tenthpower_lable" />
         <module name="tenthpower_common" />
+        <module name="tenthpower_article" />
+        <module name="tenthpower_user" />
+        <module name="tenthpower_fegin" />
+        <module name="tenthpower_recruit" />
+        <module name="tenthpower_qa" />
+        <module name="tenthpower_search" />
+        <module name="tenthpower_sms" />
+        <module name="tenthpower_spit" />
+        <module name="tenthpower_gathering" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tenthpower_base" options="-parameters" />
+      <module name="tenthpower_article" options="-parameters" />
       <module name="tenthpower_common" options="-parameters" />
+      <module name="tenthpower_fegin" options="-parameters" />
+      <module name="tenthpower_friend" options="-parameters" />
+      <module name="tenthpower_gathering" options="-parameters" />
+      <module name="tenthpower_lable" options="-parameters" />
+      <module name="tenthpower_qa" options="-parameters" />
+      <module name="tenthpower_recruit" options="-parameters" />
+      <module name="tenthpower_search" options="-parameters" />
+      <module name="tenthpower_sms" options="-parameters" />
+      <module name="tenthpower_spit" options="-parameters" />
+      <module name="tenthpower_user" options="-parameters" />
     </option>
   </component>
 </project>

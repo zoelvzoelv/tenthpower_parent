@@ -10,7 +10,17 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>tenthpower_common</module>
-        <module>tenthpower_base</module>
+        <module>tenthpower_lable</module>
+        <module>tenthpower_recruit</module>
+        <module>tenthpower_fegin</module>
+        <module>tenthpower_qa</module>
+        <module>tenthpower_article</module>
+        <module>tenthpower_gathering</module>
+        <module>tenthpower_spit</module>
+        <module>tenthpower_search</module>
+        <module>tenthpower_user</module>
+        <module>tenthpower_sms</module>
+        <module>tenthpower_friend</module>
     </modules>
 
     <parent>
