@@ -6,35 +6,71 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class SqlBaseDto implements Serializable {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 8288622251267723189L;
 
-    private static final long serialVersionUID = -6012929095434378823L;
-    private String createdBy = "";//;SecurityUtils.getCurrentUserLogin();
-    private Date createdDate = DateUtil.getCurDate();
-    private String lastModifiedBy = "";//;SecurityUtils.getCurrentUserLogin();
-    private Date lastModifiedDate = DateUtil.getCurDate();
-    private Byte isDel = 0;
+    /**
+     * 最后修改时间
+     */
+    private Date lastDate;
 
-    public String toString() {
-        return "SqlAuditBaseDto(createdBy=" + this.getCreatedBy() + ", createdDate=" + this.getCreatedDate() + ", lastModifiedBy=" + this.getLastModifiedBy() + ", lastModifiedDate=" + this.getLastModifiedDate() + ", isDel=" + this.getIsDel() + ")";
+    /**
+     * 创建时间
+     */
+    private Date createDate;
+
+    /**
+     * 创建人
+     */
+    private String createBy;
+
+    /**
+     * 是否删除
+     */
+    private Integer del = 0;
+
+    public Date getLastDate() {
+        return lastDate;
     }
 
-    public String getCreatedBy() {
-        return this.createdBy;
+
+    public void setLastDate(Date lastDate) {
+        if (lastDate == null) {
+            this.lastDate = DateUtil.getCurDate();
+        } else {
+            this.lastDate = lastDate;
+        }
     }
 
-    public Date getCreatedDate() {
-        return this.createdDate;
+
+    public Date getCreateDate() {
+        return createDate;
     }
 
-    public String getLastModifiedBy() {
-        return this.lastModifiedBy;
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 
-    public Date getLastModifiedDate() {
-        return this.lastModifiedDate;
+
+    public String getCreateBy() {
+        return createBy;
     }
 
-    public Byte getIsDel() {
-        return this.isDel;
+
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy;
+    }
+
+
+    public Integer getDel() {
+        return del;
+    }
+
+
+    public void setDel(Integer del) {
+        this.del = del;
     }
 }

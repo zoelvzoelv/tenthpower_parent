@@ -1,45 +1,28 @@
 package com.tenthpower.dto.gathering;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class UsergathVo {
+@Data
+@ApiModel(value = "活动点击记录")
+public class UsergathVo implements Serializable {
+
+    private static final long serialVersionUID = -6019095292434378823L;
+
+    @ApiModelProperty(value = "主键Id")
     private String id;
 
+    @ApiModelProperty(value = "用户Id")
     private String userid;
 
+    @ApiModelProperty(value = "活动Id")
     private String gathid;
 
+    @ApiModelProperty(value = "点击时间")
     private Date exetime;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
-
-    public String getGathid() {
-        return gathid;
-    }
-
-    public void setGathid(String gathid) {
-        this.gathid = gathid;
-    }
-
-    public Date getExetime() {
-        return exetime;
-    }
-
-    public void setExetime(Date exetime) {
-        this.exetime = exetime;
-    }
 }

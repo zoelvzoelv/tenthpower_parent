@@ -1,24 +1,29 @@
 package com.tenthpower.controller;
 
+import com.tenthpower.dto.article.ArticleVo;
 import com.tenthpower.dto.friend.FriendVo;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
 import com.tenthpower.service.FriendService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/friend")
+@Api(value="交友", tags = "FriendController")
 public class FriendController {
 
     @Autowired
     private FriendService friendService;
 
     /**
-     * 查询全部列表
+     * 查询全部
      * @return
      */
-    @RequestMapping(value="/",method = RequestMethod.GET)
+    @GetMapping(value="")
+    @ApiOperation(value="查询全部")
     public Result findAll() throws Exception {
         return new Result(true, StatusCode.OK,"查询成功",friendService.findAll() );
     }
@@ -27,7 +32,8 @@ public class FriendController {
      * @param id
      * @return
      */
-    @RequestMapping(value="/{id}",method = RequestMethod.GET)
+    @GetMapping(value="/{id}")
+    @ApiOperation(value="根据ID查询")
     public Result findById(@PathVariable String id){
         return new Result(true,StatusCode.OK,"查询成功",friendService.findById(id));
     }
@@ -36,7 +42,8 @@ public class FriendController {
      * @param
      * @return
      */
-    @RequestMapping(value="/",method = RequestMethod.POST)
+    @PostMapping(value="")
+    @ApiOperation(value="增加")
     public Result add( @RequestBody FriendVo friendVo){
         friendService.add(friendVo);
         return new Result(true,StatusCode.OK,"增加成功");
@@ -46,9 +53,9 @@ public class FriendController {
      * @param
      * @return
      */
-    @RequestMapping(value="/{id}" ,method = RequestMethod.PUT)
-    public Result update(@RequestBody FriendVo friendVo, @PathVariable String
-            id){
+    @PutMapping(value="/{id}")
+    @ApiOperation(value="修改")
+    public Result update( @RequestBody FriendVo friendVo,@PathVariable String id){
         friendVo.setId(id);
         friendService.update(friendVo);
         return new Result(true,StatusCode.OK,"修改成功");
@@ -58,7 +65,8 @@ public class FriendController {
      * @param id
      * @return
      */
-    @RequestMapping(value="/{id}" ,method = RequestMethod.DELETE)
+    @DeleteMapping(value="/{id}")
+    @ApiOperation(value="删除")
     public Result deleteById(@PathVariable String id){
         friendService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");

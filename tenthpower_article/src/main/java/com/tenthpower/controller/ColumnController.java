@@ -6,21 +6,25 @@ import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
 import com.tenthpower.service.ChannelService;
 import com.tenthpower.service.ColumnService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/column")
+@Api(value="专栏", tags = "ColumnController")
 public class ColumnController {
 
     @Autowired
     private ColumnService columnService;
 
     /**
-     * 查询全部列表
+     * 查询全部
      * @return
      */
-    @RequestMapping(value="/",method = RequestMethod.GET)
+    @GetMapping(value="")
+    @ApiOperation(value="查询全部")
     public Result findAll() throws Exception {
         return new Result(true, StatusCode.OK,"查询成功",columnService.findAll() );
     }
@@ -29,7 +33,8 @@ public class ColumnController {
      * @param id
      * @return
      */
-    @RequestMapping(value="/{id}",method = RequestMethod.GET)
+    @GetMapping(value="/{id}")
+    @ApiOperation(value="根据ID查询")
     public Result findById(@PathVariable String id){
         return new Result(true,StatusCode.OK,"查询成功",columnService.findById(id));
     }
@@ -38,7 +43,8 @@ public class ColumnController {
      * @param
      * @return
      */
-    @RequestMapping(value="/",method = RequestMethod.POST)
+    @PostMapping(value="")
+    @ApiOperation(value="增加")
     public Result add( @RequestBody ColumnVo columnVo){
         columnService.add(columnVo);
         return new Result(true,StatusCode.OK,"增加成功");
@@ -48,9 +54,9 @@ public class ColumnController {
      * @param
      * @return
      */
-    @RequestMapping(value="/{id}" ,method = RequestMethod.PUT)
-    public Result update(@RequestBody ColumnVo columnVo, @PathVariable String
-            id){
+    @PutMapping(value="/{id}")
+    @ApiOperation(value="修改")
+    public Result update( @RequestBody ColumnVo columnVo,@PathVariable String id){
         columnVo.setId(id);
         columnService.update(columnVo);
         return new Result(true,StatusCode.OK,"修改成功");
@@ -60,7 +66,8 @@ public class ColumnController {
      * @param id
      * @return
      */
-    @RequestMapping(value="/{id}" ,method = RequestMethod.DELETE)
+    @DeleteMapping(value="/{id}")
+    @ApiOperation(value="删除")
     public Result deleteById(@PathVariable String id){
         columnService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");

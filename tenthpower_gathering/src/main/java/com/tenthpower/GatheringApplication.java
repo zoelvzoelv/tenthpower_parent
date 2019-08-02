@@ -12,7 +12,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * 文章
+ * 活动
  */
 @SpringBootApplication
 public class GatheringApplication {
@@ -40,8 +40,4 @@ public class GatheringApplication {
                 configServerStatus == null ? "Not found or not setup for this application" : configServerStatus);
     }
 
-    @Bean
-    public IdWorker idWorker(){
-        return new IdWorker(1,1);
-    }
 }

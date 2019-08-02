@@ -12,11 +12,11 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @SpringBootApplication
-public class BaseApplication {
-    private static final Logger log = LoggerFactory.getLogger(BaseApplication.class);
+public class LableApplication {
+    private static final Logger log = LoggerFactory.getLogger(LableApplication.class);
 
     public static void main(String[] args) throws UnknownHostException {
-        SpringApplication app = new SpringApplication(BaseApplication.class);
+        SpringApplication app = new SpringApplication(LableApplication.class);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";
         if (env.getProperty("server.ssl.key-store") != null) {
@@ -37,8 +37,4 @@ public class BaseApplication {
                 configServerStatus == null ? "Not found or not setup for this application" : configServerStatus);
     }
 
-    @Bean
-    public IdWorker idWorker(){
-        return new IdWorker(1,1);
-    }
 }

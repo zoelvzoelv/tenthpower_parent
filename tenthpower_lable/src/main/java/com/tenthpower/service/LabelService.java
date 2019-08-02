@@ -1,11 +1,16 @@
 package com.tenthpower.service;
 
 import com.tenthpower.dao.LabelDao;
+import com.tenthpower.dto.lable.CityVo;
+import com.tenthpower.dto.lable.LabelVo;
+import com.tenthpower.pojo.City;
 import com.tenthpower.pojo.Label;
+import com.tenthpower.util.BeanCopierEx;
 import com.tenthpower.util.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -18,39 +23,46 @@ public class LabelService {
     private IdWorker idWorker;
 
     /**
-     * 查询全部标签
-     * @return
+     * 查询所有的
      */
-    public List<Label> findAll(){
-        return labelDao.findAll();
+    public List<LabelVo> findAll() throws Exception {
+        List<LabelVo> result = new ArrayList<LabelVo>();
+        List<Label> sqlResult = labelDao.findAll();
+        result = BeanCopierEx.copy(sqlResult,LabelVo.class);
+        return result;
     }
 
     /**
-     * 根据ID查询标签
-     * @return
+     * 通过id 查询
      */
-    public Label findById(String id){
-        return labelDao.findById(id).get();
+    public LabelVo findById(String id){
+        LabelVo result = new LabelVo();
+        Label sqlResult = labelDao.findById(id).get();
+        BeanCopierEx.copy(sqlResult,result);
+        return result;
     }
 
     /**
-     * 增加标签
-     * @param label
+     * 添加
      */
-    public void add(Label label){
-    label.setId( idWorker.nextId()+"" );//设置ID
-    labelDao.save(label);
-}
-    /**
-     * 修改标签
-     * @param label
-     */
-    public void update(Label label){
+    public void add(LabelVo labelVo){
+        Label label = new Label();
+        BeanCopierEx.copy(labelVo, label);
+        label.setId(idWorker.nextId());//设置ID
         labelDao.save(label);
     }
+
     /**
-     * 删除标签
-     * @param id
+     * 更新
+     */
+    public void update(LabelVo labelVo){
+        Label label = new Label();
+        BeanCopierEx.copy(labelVo, label);
+        labelDao.save(label);
+    }
+
+    /**
+     * 删除
      */
     public void deleteById(String id){
         labelDao.deleteById(id);

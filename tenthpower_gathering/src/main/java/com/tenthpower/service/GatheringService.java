@@ -64,7 +64,7 @@ public class GatheringService {
     }
 
     /**
-     * 删除文章
+     * 删除
      */
     public void deleteById(String id){
         gatheringDao.deleteById(id);
