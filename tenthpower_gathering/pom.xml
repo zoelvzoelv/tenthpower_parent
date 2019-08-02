@@ -24,6 +24,18 @@
             <artifactId>tenthpower_common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.tenthpower</groupId>
+            <artifactId>tenthpower_fegin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.tenthpower</groupId>
+            <artifactId>tenthpower_fegin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>

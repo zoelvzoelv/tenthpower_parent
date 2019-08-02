@@ -38,8 +38,8 @@ public class FriendService {
     /**
      * 通过id 查询
      */
-    public ArticleVo findById(String id){
-        ArticleVo result = new ArticleVo();
+    public FriendVo findById(String id){
+        FriendVo result = new FriendVo();
         Friend sqlResult = friendDao.findById(id).get();
         BeanCopierEx.copy(sqlResult,result);
         return result;
