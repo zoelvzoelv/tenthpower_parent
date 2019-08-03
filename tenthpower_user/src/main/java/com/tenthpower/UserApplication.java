@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 
@@ -15,6 +16,7 @@ import java.net.UnknownHostException;
  * 招聘微服务
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class UserApplication {
     private static final Logger log = LoggerFactory.getLogger(UserApplication.class);
 
@@ -40,8 +42,4 @@ public class UserApplication {
                 configServerStatus == null ? "Not found or not setup for this application" : configServerStatus);
     }
 
-    @Bean
-    public IdWorker idWorker(){
-        return new IdWorker(1,1);
-    }
 }

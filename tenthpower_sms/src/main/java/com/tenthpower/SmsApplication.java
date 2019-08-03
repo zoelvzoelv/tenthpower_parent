@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 
@@ -12,9 +13,11 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * 招聘微服务
+ * 邮件短信
+ * @EnableEurekaClient这个注解只用于Eureka做为服务发现组件，而@EnableDiscoveryClient则可用于所有的服务发现组件
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class SmsApplication {
     private static final Logger log = LoggerFactory.getLogger(SmsApplication.class);
 
@@ -40,8 +43,4 @@ public class SmsApplication {
                 configServerStatus == null ? "Not found or not setup for this application" : configServerStatus);
     }
 
-    @Bean
-    public IdWorker idWorker(){
-        return new IdWorker(1,1);
-    }
 }
