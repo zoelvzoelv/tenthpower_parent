@@ -2,48 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee9154d-d253-4c0f-8e81-f17b227eee4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tenthpower_search/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenthpower_search/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenthpower_sms/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenthpower_sms/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenthpower_spit/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenthpower_spit/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_article/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_article/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_article/src/main/java/com/tenthpower/ArticleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_article/src/main/java/com/tenthpower/ArticleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_article/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_article/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_friend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_friend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_friend/src/main/java/com/tenthpower/FriendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_friend/src/main/java/com/tenthpower/FriendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_friend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_friend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_gathering/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_gathering/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_gathering/src/main/java/com/tenthpower/GatheringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_gathering/src/main/java/com/tenthpower/GatheringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_gathering/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_gathering/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_lable/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_lable/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_lable/src/main/java/com/tenthpower/LableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_lable/src/main/java/com/tenthpower/LableApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tenthpower_lable/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_lable/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_lable/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_lable/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_qa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/QaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/QaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_qa/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_qa/target/classes/com/tenthpower/QaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/target/classes/com/tenthpower/QaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/RecruitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/RecruitApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/target/classes/com/tenthpower/RecruitApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/target/classes/com/tenthpower/RecruitApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_search/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_search/src/main/java/com/tenthpower/SearchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_search/src/main/java/com/tenthpower/SearchApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_sms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_sms/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_sms/src/main/java/com/tenthpower/SmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_sms/src/main/java/com/tenthpower/SmsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_spit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_spit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_spit/src/main/java/com/tenthpower/SpitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_spit/src/main/java/com/tenthpower/SpitApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_spit/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_spit/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,27 +48,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_article/src/main/java/com/tenthpower/ArticleApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_friend/src/main/java/com/tenthpower/FriendApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tenthpower_gathering/src/main/java/com/tenthpower/GatheringApplication.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -164,11 +102,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/UserApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="34" column="81" lean-forward="true" selection-start-line="34" selection-start-column="81" selection-end-line="34" selection-end-column="81" />
+            <state relative-caret-position="370">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tenthpower_user/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tenthpower_user/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tenthpower_lable/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -239,7 +204,6 @@
         <option value="$PROJECT_DIR$/tenthpower_user/pom.xml" />
         <option value="$PROJECT_DIR$/tenthpower_friend/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/tenthpower_gathering/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/tenthpower_lable/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/tenthpower_qa/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/tenthpower_spit/src/main/resources/application.yml" />
@@ -247,6 +211,7 @@
         <option value="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/UserApplication.java" />
         <option value="$PROJECT_DIR$/tenthpower_sms/src/main/java/com/tenthpower/SmsApplication.java" />
         <option value="$PROJECT_DIR$/tenthpower_spit/src/main/java/com/tenthpower/SpitApplication.java" />
+        <option value="$PROJECT_DIR$/tenthpower_lable/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -430,6 +395,14 @@
             <path>
               <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tenthpower_lable" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
               <item name="tenthpower_qa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -636,6 +609,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tenthpower" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tenthpower_user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -781,12 +762,12 @@
       <workItem from="1564760049865" duration="5837000" />
       <workItem from="1564803883767" duration="5752000" />
       <workItem from="1564832483055" duration="2207000" />
-      <workItem from="1564834721837" duration="7212000" />
+      <workItem from="1564834721837" duration="9040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56519000" />
+    <option name="totallyTimeSpent" value="58347000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -799,8 +780,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.16897655" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.16897655" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.204236" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -815,7 +797,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32741934" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32741934" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" sideWeight="0.49924356" visible="true" weight="0.74785405" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49924356" visible="true" weight="0.14377682" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32725322" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.048387095" />
@@ -829,11 +811,11 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" sideWeight="0.49361703" visible="true" weight="0.04584222" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.49624062" visible="true" weight="0.04584222" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.506383" side_tool="true" visible="true" weight="0.04584222" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5037594" side_tool="true" visible="true" weight="0.04584222" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1019,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tenthpower_article/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -1044,13 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_lable/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -1075,13 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_user/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1167,8 +1128,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/UserApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="34" column="81" lean-forward="true" selection-start-line="34" selection-start-column="81" selection-end-line="34" selection-end-column="81" />
+        <state relative-caret-position="370">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_user/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_lable/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
         </state>
       </provider>
     </entry>
