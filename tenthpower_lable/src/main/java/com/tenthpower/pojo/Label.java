@@ -18,7 +18,7 @@ public class Label {
 
     private Long fans;
 
-    private String recommend;
+    private Integer recommend;
 
     public String getId() {
         return id;
@@ -60,11 +60,11 @@ public class Label {
         this.fans = fans;
     }
 
-    public String getRecommend() {
+    public Integer getRecommend() {
         return recommend;
     }
 
-    public void setRecommend(String recommend) {
+    public void setRecommend(Integer recommend) {
         this.recommend = recommend;
     }
 }

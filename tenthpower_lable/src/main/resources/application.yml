@@ -1,8 +1,8 @@
 server:
-    port: 9001
+    port: 9011
 spring:
     application:
-        name: tenthpower-lable #指定服务名
+        name: tenthpower-lable
     datasource:
         driverClassName: com.mysql.jdbc.Driver
         url: jdbc:mysql://134.175.91.16:3306/tensquare_lable?characterEncoding=utf-8

@@ -1,7 +1,6 @@
 package com.tenthpower.controller;
 
 import com.tenthpower.dto.lable.CityVo;
-import com.tenthpower.dto.lable.LabelVo;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
 import com.tenthpower.service.CityService;

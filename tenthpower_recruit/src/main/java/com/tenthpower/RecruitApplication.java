@@ -40,8 +40,4 @@ public class RecruitApplication {
                 configServerStatus == null ? "Not found or not setup for this application" : configServerStatus);
     }
 
-    @Bean
-    public IdWorker idWorker(){
-        return new IdWorker(1,1);
-    }
 }

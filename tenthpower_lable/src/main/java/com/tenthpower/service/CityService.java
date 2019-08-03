@@ -1,12 +1,8 @@
 package com.tenthpower.service;
 
 import com.tenthpower.dao.CityDao;
-import com.tenthpower.dao.LabelDao;
-import com.tenthpower.dto.gathering.GatheringVo;
 import com.tenthpower.dto.lable.CityVo;
-import com.tenthpower.dto.lable.LabelVo;
 import com.tenthpower.pojo.City;
-import com.tenthpower.pojo.Label;
 import com.tenthpower.util.BeanCopierEx;
 import com.tenthpower.util.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;

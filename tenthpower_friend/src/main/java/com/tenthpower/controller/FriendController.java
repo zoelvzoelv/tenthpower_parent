@@ -1,6 +1,5 @@
 package com.tenthpower.controller;
 
-import com.tenthpower.dto.article.ArticleVo;
 import com.tenthpower.dto.friend.FriendVo;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;

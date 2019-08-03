@@ -1,10 +1,7 @@
 package com.tenthpower.service;
 
-import com.tenthpower.dao.LabelDao;
 import com.tenthpower.dao.UlDao;
-import com.tenthpower.dto.lable.LabelVo;
 import com.tenthpower.dto.lable.UlVo;
-import com.tenthpower.pojo.Label;
 import com.tenthpower.pojo.Ul;
 import com.tenthpower.util.BeanCopierEx;
 import com.tenthpower.util.IdWorker;

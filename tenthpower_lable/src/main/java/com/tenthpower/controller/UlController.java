@@ -1,6 +1,5 @@
 package com.tenthpower.controller;
 
-import com.tenthpower.dto.lable.LabelVo;
 import com.tenthpower.dto.lable.UlVo;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;

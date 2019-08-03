@@ -1,7 +1,6 @@
 package com.tenthpower.service;
 
 import com.tenthpower.dao.FriendDao;
-import com.tenthpower.dto.article.ArticleVo;
 import com.tenthpower.dto.friend.FriendVo;
 import com.tenthpower.pojo.Friend;
 import com.tenthpower.util.BeanCopierEx;

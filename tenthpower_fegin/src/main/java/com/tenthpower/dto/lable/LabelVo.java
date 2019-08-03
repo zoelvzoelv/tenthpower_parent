@@ -24,9 +24,9 @@ public class LabelVo implements Serializable {
     @ApiModelProperty(value = "使用数量")
     private Long count;
 
-    @ApiModelProperty(value = "是否推荐")
+    @ApiModelProperty(value = "粉丝数")
     private Long fans;
 
-    @ApiModelProperty(value = "粉丝数")
-    private String recommend;
+    @ApiModelProperty(value = "是否推荐")
+    private Integer recommend;
 }

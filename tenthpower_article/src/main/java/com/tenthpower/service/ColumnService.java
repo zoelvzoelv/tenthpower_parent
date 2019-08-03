@@ -1,11 +1,7 @@
 package com.tenthpower.service;
 
-import com.tenthpower.dao.ChannelDao;
 import com.tenthpower.dao.ColumnDao;
-import com.tenthpower.dto.article.ArticleVo;
 import com.tenthpower.dto.article.ColumnVo;
-import com.tenthpower.pojo.Article;
-import com.tenthpower.pojo.Channel;
 import com.tenthpower.pojo.Column;
 import com.tenthpower.util.BeanCopierEx;
 import com.tenthpower.util.IdWorker;

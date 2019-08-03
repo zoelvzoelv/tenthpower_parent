@@ -1,21 +1,21 @@
 package com.tenthpower.controller;
 
-import com.tenthpower.dto.gathering.UsergathVo;
+import com.tenthpower.dto.recruit.RecruitVo;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
-import com.tenthpower.service.UsergathService;
+import com.tenthpower.service.RecruitService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/usergath")
-@Api(value="活动点击记录", tags = "UsergathController")
-public class UsergathController {
+@RequestMapping("/api/recruit")
+@Api(value="职位", tags = "RecruitController")
+public class RecruitController {
 
     @Autowired
-    private UsergathService usergathService;
+    private RecruitService recruitService;
 
     /**
      * 查询全部
@@ -24,7 +24,7 @@ public class UsergathController {
     @GetMapping(value="")
     @ApiOperation(value="查询全部")
     public Result findAll() throws Exception {
-        return new Result(true, StatusCode.OK,"查询成功",usergathService.findAll() );
+        return new Result(true, StatusCode.OK,"查询成功",recruitService.findAll() );
     }
     /**
      * 根据ID查询
@@ -34,7 +34,7 @@ public class UsergathController {
     @GetMapping(value="/{id}")
     @ApiOperation(value="根据ID查询")
     public Result findById(@PathVariable String id){
-        return new Result(true,StatusCode.OK,"查询成功",usergathService.findById(id));
+        return new Result(true,StatusCode.OK,"查询成功",recruitService.findById(id));
     }
     /**
      * 增加
@@ -43,8 +43,8 @@ public class UsergathController {
      */
     @PostMapping(value="")
     @ApiOperation(value="增加")
-    public Result add( @RequestBody UsergathVo usergathVo){
-        usergathService.add(usergathVo);
+    public Result add( @RequestBody RecruitVo recruitVo){
+        recruitService.add(recruitVo);
         return new Result(true,StatusCode.OK,"增加成功");
     }
     /**
@@ -54,9 +54,9 @@ public class UsergathController {
      */
     @PutMapping(value="/{id}")
     @ApiOperation(value="修改")
-    public Result update( @RequestBody UsergathVo usergathVo,@PathVariable String id){
-        usergathVo.setId(id);
-        usergathService.update(usergathVo);
+    public Result update( @RequestBody RecruitVo recruitVo,@PathVariable String id){
+        recruitVo.setId(id);
+        recruitService.update(recruitVo);
         return new Result(true,StatusCode.OK,"修改成功");
     }
     /**
@@ -67,7 +67,7 @@ public class UsergathController {
     @DeleteMapping(value="/{id}")
     @ApiOperation(value="删除")
     public Result deleteById(@PathVariable String id){
-        usergathService.deleteById(id);
+        recruitService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");
     }
 }

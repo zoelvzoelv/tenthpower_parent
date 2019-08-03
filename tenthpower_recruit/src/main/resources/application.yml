@@ -2,7 +2,7 @@ server:
     port: 9002
 spring:
     application:
-        name: tenthpower-recruit #指定服务名
+        name: tenthpower-recruit
     datasource:
         driverClassName: com.mysql.jdbc.Driver
         url: jdbc:mysql://134.175.91.16:3306/tensquare_recruit?characterEncoding=utf-8

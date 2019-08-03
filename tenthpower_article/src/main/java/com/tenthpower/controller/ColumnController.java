@@ -1,10 +1,8 @@
 package com.tenthpower.controller;
 
-import com.tenthpower.dto.article.ChannelVo;
 import com.tenthpower.dto.article.ColumnVo;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
-import com.tenthpower.service.ChannelService;
 import com.tenthpower.service.ColumnService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
