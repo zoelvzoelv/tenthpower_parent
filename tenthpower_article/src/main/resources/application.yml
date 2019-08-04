@@ -18,6 +18,7 @@ eureka:
     instance:
         appname: tenthpower-article
         prefer-ip-address: true
+        ip-address: 134.175.91.16
         instanceId: tenthpower-article:${spring.application.instance-id:${random.value}}
         # eureka客户需要多长时间发送心跳给eureka服务器，表明它仍然活着,默认为30 秒
         lease-renewal-interval-in-seconds: 30
