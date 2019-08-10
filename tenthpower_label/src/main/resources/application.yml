@@ -16,10 +16,10 @@ eureka:
         service-url:
             defaultZone: http://134.175.91.16:10000/eureka/
     instance:
-        appname: tenthpower-lable
+        appname: tenthpower-label
         prefer-ip-address: true
         ip-address: 134.175.91.16
-        instanceId: tenthpower-lable:${spring.application.instance-id:${random.value}}
+        instanceId: tenthpower-label:${spring.application.instance-id:${random.value}}
         # eureka客户需要多长时间发送心跳给eureka服务器，表明它仍然活着,默认为30 秒
         lease-renewal-interval-in-seconds: 30
         # Eureka服务器在接收到实例的最后一次发出的心跳后，需要等待多久才可以将此实例删除，默认为90秒
