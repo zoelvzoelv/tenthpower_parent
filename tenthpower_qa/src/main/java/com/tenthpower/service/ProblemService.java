@@ -6,6 +6,9 @@ import com.tenthpower.pojo.Problem;
 import com.tenthpower.util.BeanCopierEx;
 import com.tenthpower.util.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -64,5 +67,56 @@ public class ProblemService {
      */
     public void deleteById(String id){
         problemDao.deleteById(id);
+    }
+
+    /**
+     * 根据标签ID查询问题列表
+     * @param lableId 标签ID
+     * @param page 页码
+     * @param size 页大小
+     * @return
+     */
+    public Page<ProblemVo> findNewListByLabelId(String lableId, int page, int size) throws Exception {
+        List<ProblemVo> result = new ArrayList<ProblemVo>();
+        PageRequest pageRequest = PageRequest.of(page - 1, size);
+        Page<Problem> sqlResult = problemDao.findNewListByLabelId(lableId, pageRequest);
+        List<Problem> sqlContent = sqlResult.getContent();
+        result = BeanCopierEx.copy(sqlContent,ProblemVo.class);
+        Page<ProblemVo> res = new PageImpl(result, sqlResult.getPageable(), sqlResult.getTotalElements());
+        return res;
+    }
+
+    /**
+     * 根据标签ID查询热门问题列表
+     * @param lableId 标签ID
+     * @param page 页码
+     * @param size 页大小
+     * @return
+     */
+    public Page<ProblemVo> findHotListByLabelId(String lableId, int page, int size) throws Exception {
+        List<ProblemVo> result = new ArrayList<ProblemVo>();
+        PageRequest pageRequest = PageRequest.of(page - 1, size);
+        Page<Problem> sqlResult = problemDao.findHotListByLabelId(lableId, pageRequest);
+        List<Problem> sqlContent = sqlResult.getContent();
+        result = BeanCopierEx.copy(sqlContent,ProblemVo.class);
+        Page<ProblemVo> res = new PageImpl(result, sqlResult.getPageable(), sqlResult.getTotalElements());
+        return res;
+    }
+
+    /**
+     * 根据标签ID查询等待回答列表
+     * @param lableId 标签ID
+     * @param page 页码
+     * @param size 页大小
+     * @return
+     */
+    public Page<ProblemVo> findWaitListByLabelId(String lableId, int page, int size) throws Exception {
+        List<ProblemVo> result = new ArrayList<ProblemVo>();
+        PageRequest pageRequest = PageRequest.of(page - 1, size);
+        Page<Problem> sqlResult = problemDao.findWaitListByLabelId(lableId, pageRequest);
+        List<Problem> sqlContent = sqlResult.getContent();
+        result = BeanCopierEx.copy(sqlContent,ProblemVo.class);
+        Page<ProblemVo> res = new PageImpl(result, sqlResult.getPageable(), sqlResult.getTotalElements());
+        return res;
     }
 }

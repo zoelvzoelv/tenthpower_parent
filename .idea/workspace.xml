@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dee9154d-d253-4c0f-8e81-f17b227eee4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/constants/VoConstants.java" afterDir="false" />
+    <list default="true" id="dee9154d-d253-4c0f-8e81-f17b227eee4b" name="Default Changelist" comment="招聘的自定义接口bug修改">
+      <change afterPath="$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/qa/ReplyVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ReplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ReplyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Reply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ReplyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/recruit/RecruitVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/recruit/RecruitVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tenthpower_lable/target/classes/com/tenthpower/controller/LabelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_lable/target/classes/com/tenthpower/controller/LabelController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tenthpower_lable/target/classes/com/tenthpower/pojo/Label.class" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_lable/target/classes/com/tenthpower/pojo/Label.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tenthpower_lable/target/classes/com/tenthpower/service/LabelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_lable/target/classes/com/tenthpower/service/LabelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/EnterpriseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/EnterpriseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/RecruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/RecruitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/EnterpriseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/EnterpriseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/RecruitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/RecruitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Recruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Recruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/EnterpriseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/EnterpriseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/RecruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/RecruitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ProblemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ProblemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/PlDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/PlDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ProblemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ProblemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Pl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Pl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/PlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/PlService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ProblemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ProblemService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,68 +63,90 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/constants/VoConstants.java">
+        <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/PlDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/RecruitDao.java">
+        <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ProblemDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/RecruitService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+            <state relative-caret-position="487">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="46" />
               <folding>
-                <element signature="e#1585#1586#0" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#0#103#1" expanded="true" />
+                <element signature="e#0#100#1" expanded="true" />
+                <element signature="e#0#117#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Pl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/PlService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1237">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
+              <folding>
+                <element signature="e#1400#1401#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ProblemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
+              <folding>
+                <element signature="e#1580#1581#0" expanded="true" />
+                <element signature="e#1621#1622#0" expanded="true" />
+                <element signature="e#2120#2131#0" expanded="true" />
+                <element signature="e#2745#2756#0" expanded="true" />
+                <element signature="e#3448#3459#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/QaApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/RecruitController.java">
+        <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ProblemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
-              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+            <state relative-caret-position="462">
+              <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/recruit/RecruitVo.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.2.RELEASE/spring-data-commons-2.1.2.RELEASE.jar!/org/springframework/data/domain/Page.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="43" column="25" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Recruit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/EnterpriseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="225">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -155,19 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/dao/FollowDao.java" />
-        <option value="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/dao/AdminDao.java" />
-        <option value="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/service/FollowService.java" />
-        <option value="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/tenthpower_user/src/main/java/com/tenthpower/controller/FollowController.java" />
-        <option value="$PROJECT_DIR$/tenthpower_article/src/main/java/com/tenthpower/controller/ChannelController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/tenthpower_article/src/main/java/com/tenthpower/ArticleApplication.java" />
-        <option value="$PROJECT_DIR$/tenthpower_article/pom.xml" />
-        <option value="$PROJECT_DIR$/tenthpower_friend/src/main/java/com/tenthpower/FriendApplication.java" />
-        <option value="$PROJECT_DIR$/tenthpower_gathering/src/main/java/com/tenthpower/GatheringApplication.java" />
-        <option value="$PROJECT_DIR$/tenthpower_lable/src/main/java/com/tenthpower/LableApplication.java" />
         <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/QaApplication.java" />
         <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/RecruitApplication.java" />
         <option value="$PROJECT_DIR$/tenthpower_search/src/main/java/com/tenthpower/SearchApplication.java" />
@@ -197,15 +208,28 @@
         <option value="$PROJECT_DIR$/tenthpower_lable/src/main/java/com/tenthpower/pojo/Label.java" />
         <option value="$PROJECT_DIR$/tenthpower_lable/src/main/java/com/tenthpower/controller/LabelController.java" />
         <option value="$PROJECT_DIR$/tenthpower_lable/src/main/java/com/tenthpower/service/LabelService.java" />
-        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/EnterpriseDao.java" />
-        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/EnterpriseService.java" />
         <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/EnterpriseController.java" />
         <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Recruit.java" />
         <option value="$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/recruit/RecruitVo.java" />
-        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/RecruitDao.java" />
         <option value="$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/constants/VoConstants.java" />
-        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/RecruitService.java" />
         <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/RecruitController.java" />
+        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/EnterpriseDao.java" />
+        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Enterprise.java" />
+        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/EnterpriseService.java" />
+        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/RecruitService.java" />
+        <option value="$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/RecruitDao.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Reply.java" />
+        <option value="$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/qa/ReplyVo.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ReplyDao.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ReplyService.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ReplyController.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/PlDao.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/PlService.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Pl.java" />
+        <option value="$PROJECT_DIR$/tenthpower_common/src/main/java/com/tenthpower/util/PageCopierEx.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ProblemDao.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ProblemService.java" />
+        <option value="$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ProblemController.java" />
       </list>
     </option>
   </component>
@@ -248,67 +272,28 @@
             <path>
               <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
+              <item name="tenthpower_common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
+              <item name="tenthpower_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
+              <item name="tenthpower_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
+              <item name="tenthpower_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tenthpower_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenthpower_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower_recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tenthpower" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,6 +314,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tenthpower_search" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -336,11 +322,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.tenthpower.dao" />
+      <recent name="com.tenthpower.util" />
       <recent name="com.tenthpower.controller" />
       <recent name="com.tenthpower.service" />
+      <recent name="com.tenthpower.dao" />
       <recent name="com.tenthpower.pojo" />
-      <recent name="com.tenthpower.dto.friend" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\新建文件夹\tenthpower_parent\tenthpower_search" />
@@ -362,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LableApplication">
+  <component name="RunManager" selected="Spring Boot.QaApplication">
     <configuration name="ArticleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="tenthpower_article" />
       <extension name="coverage">
@@ -430,10 +416,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.QaApplication" />
+        <item itemvalue="Spring Boot.RecruitApplication" />
         <item itemvalue="Spring Boot.LableApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Spring Boot.RecruitApplication" />
-        <item itemvalue="Spring Boot.QaApplication" />
         <item itemvalue="Spring Boot.ArticleApplication" />
       </list>
     </recent_temporary>
@@ -458,7 +444,7 @@
       <workItem from="1564834721837" duration="9133000" />
       <workItem from="1564893908223" duration="6014000" />
       <workItem from="1565095438654" duration="3101000" />
-      <workItem from="1565412562745" duration="2858000" />
+      <workItem from="1565412562745" duration="8379000" />
     </task>
     <task id="LOCAL-00001" summary="增加lable 的分页搜索查询，">
       <created>1565097916031</created>
@@ -467,11 +453,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565097916031</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="招聘的自定义接口开发">
+      <created>1565417435330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565417435330</updated>
+    </task>
+    <task id="LOCAL-00003" summary="招聘的自定义接口bug修改">
+      <created>1565418412087</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565418412087</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70413000" />
+    <option name="totallyTimeSpent" value="75934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,7 +486,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.22012103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.026475038" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.204236" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -501,11 +501,11 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32741934" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32741934" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49924356" weight="0.048387095" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5901288" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49924356" visible="true" weight="0.048387095" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4903226" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.048387095" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.21451613" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.5193548" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.048387095" />
@@ -527,7 +527,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加lable 的分页搜索查询，" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加lable 的分页搜索查询，" />
+    <MESSAGE value="招聘的自定义接口开发" />
+    <MESSAGE value="招聘的自定义接口bug修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="招聘的自定义接口bug修改" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tenthpower_parent$ArticleApplication.ic" NAME="ArticleApplication Coverage Results" MODIFIED="1564837966993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -535,118 +537,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tenthpower_gathering/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_lable/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_qa/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_search/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_sms/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_spit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_user/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_spit/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_spit/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_sms/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_sms/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_search/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_search/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_friend/src/main/java/com/tenthpower/FriendApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_gathering/src/main/java/com/tenthpower/GatheringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_lable/src/main/java/com/tenthpower/LableApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/QaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/RecruitApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_sms/src/main/java/com/tenthpower/SmsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tenthpower_spit/src/main/java/com/tenthpower/SpitApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -800,35 +690,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/EnterpriseService.java">
+    <entry file="file://$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/constants/VoConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="37" />
-          <folding>
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1737#1738#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Enterprise.java">
+    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/RecruitController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        <state relative-caret-position="217">
+          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/RecruitApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/EnterpriseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="74" column="91" selection-start-line="74" selection-start-column="91" selection-end-line="74" selection-end-column="91" />
+          <folding>
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Recruit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/EnterpriseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -839,24 +736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/constants/VoConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/RecruitDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/service/RecruitService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="78" column="22" lean-forward="true" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
           <folding>
             <element signature="e#1585#1586#0" expanded="true" />
             <element signature="e#1626#1627#0" expanded="true" />
@@ -864,10 +747,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/controller/RecruitController.java">
+    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/pojo/Enterprise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        <state relative-caret-position="625">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/EnterpriseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/src/main/java/com/tenthpower/dao/RecruitDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_recruit/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_lable/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Reply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/qa/ProblemVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-613">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_fegin/src/main/java/com/tenthpower/dto/qa/ReplyVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ReplyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ReplyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#641#650#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ReplyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/PlDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.2.RELEASE/spring-data-commons-2.1.2.RELEASE.jar!/org/springframework/data/domain/Page.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/QaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="131" column="62" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/PlService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1237">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/pojo/Pl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_common/src/main/java/com/tenthpower/util/PageCopierEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/dao/ProblemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#103#1" expanded="true" />
+            <element signature="e#0#100#1" expanded="true" />
+            <element signature="e#0#117#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/service/ProblemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
+          <folding>
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+            <element signature="e#2120#2131#0" expanded="true" />
+            <element signature="e#2745#2756#0" expanded="true" />
+            <element signature="e#3448#3459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenthpower_qa/src/main/java/com/tenthpower/controller/ProblemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
         </state>
       </provider>
     </entry>

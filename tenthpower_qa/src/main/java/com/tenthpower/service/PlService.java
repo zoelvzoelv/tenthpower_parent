@@ -2,10 +2,13 @@ package com.tenthpower.service;
 
 import com.tenthpower.dao.PlDao;
 import com.tenthpower.dto.qa.PlVo;
+import com.tenthpower.dto.qa.ProblemVo;
 import com.tenthpower.pojo.Pl;
 import com.tenthpower.util.BeanCopierEx;
 import com.tenthpower.util.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -65,4 +68,5 @@ public class PlService {
     public void deleteById(String id){
         plDao.deleteById(id);
     }
+
 }
