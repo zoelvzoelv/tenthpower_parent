@@ -1,5 +1,6 @@
 package com.tenthpower.service;
 
+import com.tenthpower.constants.VoConstants;
 import com.tenthpower.dao.ArticleDao;
 import com.tenthpower.dto.article.ArticleVo;
 import com.tenthpower.pojo.Article;
@@ -10,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,4 +71,25 @@ public class ArticleService {
     public void deleteById(String id){
         articleDao.deleteById(id);
     }
+
+    /**
+     * 文章审核
+     * @param id
+     */
+    @Transactional
+    public void examine(String id){
+        // 文章设置成审核通过
+        articleDao.updateState(id, VoConstants.ARTICLE_STATE);
+    }
+
+    /**
+     * 文章点赞
+     * @param id
+     * @return
+     */
+    @Transactional
+    public int updateThumbup(String id){
+        return articleDao.updateThumbup(id);
+    }
+
 }

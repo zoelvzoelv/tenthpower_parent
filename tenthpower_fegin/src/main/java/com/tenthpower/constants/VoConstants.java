@@ -11,4 +11,9 @@ public class VoConstants {
      * 职位状态：正常
      */
     public static final Integer RECRUIT_STATE = 0;
+
+    /**
+     * 文章的状态： 通过审核
+     */
+    public static final Integer ARTICLE_STATE = 1;
 }

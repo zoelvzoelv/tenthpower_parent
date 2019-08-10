@@ -70,4 +70,29 @@ public class ArticleController {
         articleService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");
     }
+
+    /**
+     * 文章审核
+     * @param id
+     * @return
+     */
+    @PutMapping(value="/examine/{id}")
+    @ApiOperation(value="文章审核")
+    public Result examine(@PathVariable String id){
+        articleService.examine(id);
+        return new Result(true, StatusCode.OK, "审核成功！");
+    }
+
+    /**
+     * 文章点赞
+     * @param id
+     * @return
+     */
+    @PutMapping(value="/thumbup/{id}")
+    @ApiOperation(value="文章点赞")
+    public Result updateThumbup(@PathVariable String id){
+        articleService.updateThumbup(id);
+        return new Result(true, StatusCode.OK,"点赞成功");
+    }
+
 }

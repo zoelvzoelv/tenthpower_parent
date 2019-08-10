@@ -33,7 +33,7 @@ public class Article extends SqlBaseDto {
 
     private String visits;
 
-    private String thumbup;
+    private Integer thumbup;
 
     private Integer state;
 
@@ -131,11 +131,11 @@ public class Article extends SqlBaseDto {
         this.visits = visits;
     }
 
-    public String getThumbup() {
+    public Integer getThumbup() {
         return thumbup;
     }
 
-    public void setThumbup(String thumbup) {
+    public void setThumbup(Integer thumbup) {
         this.thumbup = thumbup;
     }
 
