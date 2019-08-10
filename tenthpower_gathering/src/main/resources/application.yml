@@ -52,3 +52,5 @@ spring:
         database: MySQL
         show‐sql: true
         generate‐ddl: true
+    redis:
+        host: 134.175.91.16

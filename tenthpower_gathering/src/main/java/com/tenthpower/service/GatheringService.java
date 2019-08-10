@@ -8,6 +8,8 @@ import com.tenthpower.util.IdWorker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -37,6 +39,7 @@ public class GatheringService {
     /**
      * 通过id 查询
      */
+    @Cacheable(value="gathering",key="#id")
     public GatheringVo findById(String id){
         GatheringVo result = new GatheringVo();
         Gathering sqlResult = gatheringDao.findById(id).get();
@@ -57,6 +60,7 @@ public class GatheringService {
     /**
      * 更新
      */
+    @CacheEvict(value="gathering",key="#gathering.id")
     public void update(GatheringVo gatheringVo){
         Gathering friend = new Gathering();
         BeanCopierEx.copy(gatheringVo, friend);
@@ -66,6 +70,7 @@ public class GatheringService {
     /**
      * 删除
      */
+    @CacheEvict(value="gathering",key="#gathering.id")
     public void deleteById(String id){
         gatheringDao.deleteById(id);
     }
