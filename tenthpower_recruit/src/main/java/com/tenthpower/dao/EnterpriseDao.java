@@ -4,6 +4,7 @@ import com.tenthpower.pojo.Enterprise;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -17,5 +18,5 @@ public interface EnterpriseDao extends JpaRepository<Enterprise, String>, JpaSpe
      * @param ishot
      * @return
      */
-    public List<Enterprise> findByIsHot(Integer ishot);
+    public List<Enterprise> findByIshot(Integer ishot);
 }

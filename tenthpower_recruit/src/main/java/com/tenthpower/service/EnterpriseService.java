@@ -63,7 +63,7 @@ public class EnterpriseService {
     /**
      * 删除
      */
-    public void deleteById(String id){
+    public void deleteById(String id) {
         enterpriseDao.deleteById(id);
     }
 
@@ -72,7 +72,7 @@ public class EnterpriseService {
      */
     public List<EnterpriseVo> hotList() throws Exception {
         List<EnterpriseVo> result = new ArrayList<EnterpriseVo>();
-        List<Enterprise> sqlResult = enterpriseDao.findByIsHot(VoConstants.ENTERPRISE_ISHOT);
+        List<Enterprise> sqlResult = enterpriseDao.findByIshot(VoConstants.ENTERPRISE_ISHOT);
         result = BeanCopierEx.copy(sqlResult, EnterpriseVo.class);
         return result;
     }
