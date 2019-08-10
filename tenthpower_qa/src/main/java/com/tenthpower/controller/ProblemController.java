@@ -1,12 +1,14 @@
 package com.tenthpower.controller;
 
 import com.tenthpower.dto.qa.ProblemVo;
+import com.tenthpower.entity.PageResult;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
 import com.tenthpower.service.ProblemService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -70,4 +72,45 @@ public class ProblemController {
         problemService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");
     }
+
+    /**
+     * 根据标签ID查询最新问题列表
+     * @param labelid
+     * @return
+     */
+    @GetMapping(value="/newlist/{labelid}/{page}/{size}")
+    @ApiOperation(value="根据标签ID查询最新问题列表")
+    public Result findNewListByLabelId(@PathVariable String labelid,@PathVariable int page,@PathVariable int size) throws Exception {
+        Page<ProblemVo> pageList = problemService.findNewListByLabelId(labelid, page, size);
+        PageResult<ProblemVo> pageResult = new PageResult<>(pageList.getTotalElements(), pageList.getContent());
+        return new Result(true, StatusCode.OK, "查询成功",pageResult);
+    }
+
+    /**
+     * 根据标签ID查询热门问题列表
+     * @param labelId
+     * @return
+     */
+    @GetMapping(value="/hotlist/{labelid}/{page}/{size}")
+    @ApiOperation(value="根据标签ID查询热门问题列表")
+    public Result findHotListByLabelId(@PathVariable String labelId,@PathVariable int page,@PathVariable int size) throws Exception {
+        Page<ProblemVo> pageList =problemService.findHotListByLabelId(labelId, page, size);
+        PageResult<ProblemVo> pageResult = new PageResult<>(pageList.getTotalElements(), pageList.getContent());
+        return new Result(true, StatusCode.OK, "查询成功",pageResult);
+    }
+
+    /**
+     * 根据标签ID查询等待回答列表
+     * @param labelId
+     * @return
+     */
+    @GetMapping(value="/waitlist/{labelid}/{page}/{size}")
+    @ApiOperation(value="根据标签ID查询等待回答列表")
+    public Result findWaitListByLabelId(@PathVariable String labelId,@PathVariable int page,@PathVariable int size) throws Exception {
+        Page<ProblemVo> pageList = problemService.findWaitListByLabelId(labelId, page, size);
+        PageResult<ProblemVo> pageResult = new PageResult<>(pageList.getTotalElements(), pageList.getContent());
+        return new Result(true, StatusCode.OK, "查询成功",pageResult);
+    }
+
+
 }

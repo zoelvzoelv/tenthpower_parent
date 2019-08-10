@@ -1,21 +1,21 @@
 package com.tenthpower.controller;
 
-import com.tenthpower.dto.recruit.EnterpriseVo;
+import com.tenthpower.dto.qa.ReplyVo;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
-import com.tenthpower.service.EnterpriseService;
+import com.tenthpower.service.ReplyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/enterprise")
-@Api(value="企业", tags = "EnterpriseController")
-public class EnterpriseController {
+@RequestMapping("/api/reply")
+@Api(value="问题回答", tags = "ReplyController")
+public class ReplyController {
 
     @Autowired
-    private EnterpriseService enterpriseService;
+    private ReplyService replyService;
 
     /**
      * 查询全部
@@ -24,7 +24,7 @@ public class EnterpriseController {
     @GetMapping(value="")
     @ApiOperation(value="查询全部")
     public Result findAll() throws Exception {
-        return new Result(true, StatusCode.OK,"查询成功",enterpriseService.findAll() );
+        return new Result(true, StatusCode.OK,"查询成功",replyService.findAll() );
     }
     /**
      * 根据ID查询
@@ -34,7 +34,7 @@ public class EnterpriseController {
     @GetMapping(value="/{id}")
     @ApiOperation(value="根据ID查询")
     public Result findById(@PathVariable String id){
-        return new Result(true,StatusCode.OK,"查询成功",enterpriseService.findById(id));
+        return new Result(true,StatusCode.OK,"查询成功",replyService.findById(id));
     }
     /**
      * 增加
@@ -43,8 +43,8 @@ public class EnterpriseController {
      */
     @PostMapping(value="")
     @ApiOperation(value="增加")
-    public Result add( @RequestBody EnterpriseVo enterpriseVo){
-        enterpriseService.add(enterpriseVo);
+    public Result add( @RequestBody ReplyVo replyVo){
+        replyService.add(replyVo);
         return new Result(true,StatusCode.OK,"增加成功");
     }
     /**
@@ -54,9 +54,9 @@ public class EnterpriseController {
      */
     @PutMapping(value="/{id}")
     @ApiOperation(value="修改")
-    public Result update( @RequestBody EnterpriseVo enterpriseVo,@PathVariable String id){
-        enterpriseVo.setId(id);
-        enterpriseService.update(enterpriseVo);
+    public Result update( @RequestBody ReplyVo replyVo,@PathVariable String id){
+        replyVo.setId(id);
+        replyService.update(replyVo);
         return new Result(true,StatusCode.OK,"修改成功");
     }
     /**
@@ -67,16 +67,7 @@ public class EnterpriseController {
     @DeleteMapping(value="/{id}")
     @ApiOperation(value="删除")
     public Result deleteById(@PathVariable String id){
-        enterpriseService.deleteById(id);
+        replyService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");
-    }
-
-    /**
-     * 查询热门企业
-     * @return
-     */
-    @RequestMapping(value="/search/hotlist",method=RequestMethod.GET)
-    public Result hotlist() throws Exception {
-        return new Result(true, StatusCode.OK, "查询成功",enterpriseService.hotList());
     }
 }

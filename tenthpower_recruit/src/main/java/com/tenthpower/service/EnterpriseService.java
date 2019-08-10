@@ -1,5 +1,6 @@
 package com.tenthpower.service;
 
+import com.tenthpower.constants.VoConstants;
 import com.tenthpower.dao.EnterpriseDao;
 import com.tenthpower.dto.recruit.EnterpriseVo;
 import com.tenthpower.pojo.Enterprise;
@@ -62,7 +63,17 @@ public class EnterpriseService {
     /**
      * 删除
      */
-    public void deleteById(String id){
+    public void deleteById(String id) {
         enterpriseDao.deleteById(id);
+    }
+
+    /**
+     * 热门企业
+     */
+    public List<EnterpriseVo> hotList() throws Exception {
+        List<EnterpriseVo> result = new ArrayList<EnterpriseVo>();
+        List<Enterprise> sqlResult = enterpriseDao.findByIshot(VoConstants.ENTERPRISE_ISHOT);
+        result = BeanCopierEx.copy(sqlResult, EnterpriseVo.class);
+        return result;
     }
 }

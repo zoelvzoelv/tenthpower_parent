@@ -12,7 +12,7 @@ public class Pl {
 
     private String problemid;
 
-    private Integer labelid;
+    private String labelid;
 
 
     public String getId() {
@@ -31,11 +31,11 @@ public class Pl {
         this.problemid = problemid;
     }
 
-    public Integer getLabelid() {
+    public String getLabelid() {
         return labelid;
     }
 
-    public void setLabelid(Integer labelid) {
+    public void setLabelid(String labelid) {
         this.labelid = labelid;
     }
 }

@@ -9,6 +9,8 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/recruit")
 @Api(value="职位", tags = "RecruitController")
@@ -70,4 +72,26 @@ public class RecruitController {
         recruitService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");
     }
+
+    /**
+     * 推荐职位列表
+     * @param recruitVo
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value="/search/recommend",method= RequestMethod.GET)
+    public Result recommend(@RequestBody RecruitVo recruitVo) throws Exception {
+        List<RecruitVo> list = recruitService.findTop4ByStateOrderByCreatetimeDesc(recruitVo);
+        return new Result(true,StatusCode.OK,"查询成功",list);
+    }
+
+    /**
+     * 最新职位列表
+     * @return
+     */
+    @RequestMapping(value="/search/newlist",method= RequestMethod.GET)
+    public Result newlist() throws Exception {
+        return new Result(true,StatusCode.OK,"查询成功",recruitService.newlist());
+    }
+
 }

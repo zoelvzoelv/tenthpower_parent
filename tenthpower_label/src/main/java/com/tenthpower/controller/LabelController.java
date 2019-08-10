@@ -1,6 +1,7 @@
 package com.tenthpower.controller;
 
 import com.tenthpower.dto.lable.LabelVo;
+import com.tenthpower.entity.PageResult;
 import com.tenthpower.entity.Result;
 import com.tenthpower.entity.StatusCode;
 import com.tenthpower.pojo.Label;
@@ -8,6 +9,7 @@ import com.tenthpower.service.LabelService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -73,4 +75,29 @@ public class LabelController {
         labelService.deleteById(id);
         return new Result(true,StatusCode.OK,"删除成功");
     }
+
+    /**
+     * 根据条件查询
+     * @param labelVo
+     * @return
+     */
+    @RequestMapping(value="/search",method = RequestMethod.POST)
+    public Result findSearch(@RequestBody LabelVo labelVo){
+        return new Result(true,StatusCode.OK,"查询成功",labelService.findSearch(labelVo));
+    }
+
+    /**
+     * 条件+分页查询
+     * @param labelVo
+     * @param page
+     * @param size
+     * @return
+     */
+    @RequestMapping(value="/search/{page}/{size}",method =
+            RequestMethod.POST)
+    public Result findSearch(@RequestBody LabelVo labelVo,@PathVariable int page, @PathVariable int size){
+        Page pageList= labelService.findSearch(labelVo,page,size);
+        return new Result(true,StatusCode.OK,"查询成功",new PageResult<>(pageList.getTotalElements(),pageList.getContent()));
+    }
+
 }

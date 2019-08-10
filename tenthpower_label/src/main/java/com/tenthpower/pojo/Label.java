@@ -12,7 +12,7 @@ public class Label {
 
     private String labelname;
 
-    private String state;
+    private Integer state;
 
     private Long count;
 
@@ -36,11 +36,11 @@ public class Label {
         this.labelname = labelname;
     }
 
-    public String getState() {
+    public Integer getState() {
         return state;
     }
 
-    public void setState(String state) {
+    public void setState(Integer state) {
         this.state = state;
     }
 

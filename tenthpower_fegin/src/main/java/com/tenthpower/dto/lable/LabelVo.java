@@ -19,7 +19,7 @@ public class LabelVo implements Serializable {
     private String labelname;
 
     @ApiModelProperty(value = "状态")
-    private String state;
+    private Integer state;
 
     @ApiModelProperty(value = "使用数量")
     private Long count;

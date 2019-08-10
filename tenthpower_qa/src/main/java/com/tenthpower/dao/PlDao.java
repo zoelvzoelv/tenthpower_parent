@@ -1,8 +1,12 @@
 package com.tenthpower.dao;
 
 import com.tenthpower.pojo.Pl;
+import com.tenthpower.pojo.Problem;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Query;
 
 /**
  * JpaRepository提供了基本的增删改查

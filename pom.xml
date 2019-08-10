@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>tenthpower_common</module>
-        <module>tenthpower_lable</module>
+        <module>tenthpower_label</module>
         <module>tenthpower_recruit</module>
         <module>tenthpower_fegin</module>
         <module>tenthpower_qa</module>
@@ -21,6 +21,7 @@
         <module>tenthpower_user</module>
         <module>tenthpower_sms</module>
         <module>tenthpower_friend</module>
+        <module>tenthpower_demo</module>
     </modules>
 
     <parent>
