@@ -41,7 +41,7 @@ public class RecruitVo implements Serializable {
     private String createtime;
 
     @ApiModelProperty(value = "状态")
-    private String state;
+    private Integer state;
 
     @ApiModelProperty(value = "网址")
     private String url;

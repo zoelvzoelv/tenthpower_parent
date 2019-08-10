@@ -26,7 +26,7 @@ public class Recruit {
 
     private String createtime;
 
-    private String state;
+    private Integer state;
 
     private String url;
 
@@ -110,11 +110,11 @@ public class Recruit {
         this.createtime = createtime;
     }
 
-    public String getState() {
+    public Integer getState() {
         return state;
     }
 
-    public void setState(String state) {
+    public void setState(Integer state) {
         this.state = state;
     }
 
